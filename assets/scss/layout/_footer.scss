@@ -1,4 +1,121 @@
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+  background: $primary;
+  color:$white;
+  @include mobile{
+    position: relative;
+    top:98.67px;
+  }
+  .footer-info{
+    padding: 48px 0 0 0;
+    @include mobile{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      padding: 24px 0 0 0;
+    }
+  }
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 36px;
+  }
+  ul.footer-links{
+    display: flex;
+    @include mobile {
+      display: none;
+    }
+    a{
+      color:$white;
+      margin-right: 48px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  ul.social-links{
+    display: flex;
+    li{
+      margin-left: 32px;
+      @include pad{
+        margin-left: 16px;
+      }
+      @include mobile{
+        margin-left: 8px;
+      }
+    }
+    img{
+      width: 40px;
+      height: 40px;
+      @include pad{
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  ul.contact-methods{
+    display: flex;
+    flex-direction: column;
+    color:$white;
+    .phone{
+      margin-bottom: 8px;
+    }
+    .phone,.email{
+      display: flex;
+      align-items: center;
+      
+    }
+    .icon{
+      font-size: 36px;
+      margin-right: 20px;
+      @include mobile{
+        font-size: 18px;
+      }
+    }
+    strong{
+      font-size: 36px;
+      line-height: 54px;
+      @include mobile{
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+  .copyright{
+    margin-top: 32px;
+    padding: 32px 0;
+    border-top:1px solid $white;
+    display: flex;
+    justify-content: space-between;
+    @include mobile{
+      flex-direction: column;
+      margin-top: 16px;
+      padding: 24px 0;
+    }
+    span{
+      font-size: 16px;
+      line-height: 24px;
+      @include mobile{
+        display: inline-flex;
+        margin-bottom: 8px;
+      }
+    }
+    ul.links{
+      display: flex;
+      @include mobile{
+        flex-direction: column;
+      }
+      li{
+        margin-left: 48px;
+        @include mobile{
+          margin-left: 0;
+          margin-bottom: 8px;
+        }
+      }
+      a{
+        color:$white;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
 }

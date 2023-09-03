@@ -1,4 +1,46 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+header{
+  position: relative;
+  nav{
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+    @include mobile{
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    img{
+      width: 80px;
+      height: 48.57px;
+    }
+    .list{
+      display: flex;
+      margin-left: auto;
+      @include mobile {
+        position: absolute;
+        top:80px;
+        left:0;
+        background-color:$primary;
+        flex-wrap:wrap;
+      }
+      li{
+        @include mobile{
+          width: 50%;
+          border:1px solid $white;
+          padding: 12px;
+        }
+      }
+      a{
+        color:$white;
+        margin-left: 64px;
+        display: inline-flex;
+        font-size: 20px;
+        line-height: 30px;
+        @include mobile{
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
 }

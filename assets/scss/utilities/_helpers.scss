@@ -1,0 +1,84 @@
+/* ###### flex ###### */
+.d-flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.aic{
+    align-items: center;
+}
+.jcc{
+    justify-content: center;
+}
+
+/* ###### font size ###### */
+.fz-16 {
+    font-size: 16px;
+}
+.fz-20 {
+    font-size: 20px;
+}
+.fz-24 {
+    font-size: 24px;
+}
+.fz-36{
+    font-size: 36px;
+}
+.fz-48 {
+    font-size: 48px;
+}
+.fz-64 {
+    font-size: 64px;
+}
+
+/* ###### text ###### */
+.text-uppercase{
+    text-transform: uppercase;
+}
+.text-center{
+    text-align: center;
+}
+.text-primary{
+    color:$primary
+}
+.text-primary-deep{
+    color:$primary-deep
+}
+.text-dark{
+    color:$dark
+}
+.text-light{
+    color:$light
+}
+.text-white{
+    color:$white
+}
+
+/* ###### background ###### */
+.bg-primary{
+    background-color: $primary;
+}
+.bg-primary-deep{
+    background-color: $primary-deep;
+}
+.bg-dark{
+    background-color: $dark;
+}
+.bg-light{
+    background-color: $light;
+}
+.bg-white{
+    background-color: $white;
+}
+
+/* ###### spacing ###### */
+.ms-auto{
+    margin-left: auto;
+}
+.me-auto{
+    margin-right: auto;
+}
