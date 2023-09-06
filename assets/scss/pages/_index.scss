@@ -1,8 +1,12 @@
-.index{
+
+.index-content{
   @include mobile{
     position: relative;
     top:98.67px;
   }
+}
+
+.index-cover{
   .bg-cover{
     background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true');
     background-position: center;
@@ -52,6 +56,358 @@
       background-color:$primary;
       font-size: 20px;
       line-height: 30px;
+    }
+  }
+}
+
+.about{
+  padding: 80px 0;
+  background: $light;
+  h3{
+    color:$primary-deep;
+    text-align: center;
+    font-size: 48px;
+    line-height: 72px;
+    margin-bottom: 32px;
+    font-weight: bold;
+    @include mobile {
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 24px;
+    }
+  }
+  ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:24px;
+    li{
+      flex-basis: calc(25% - 24px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include pad {
+        flex-basis: calc(50% - 24px);
+      }
+      @include mobile {
+        flex-basis: calc(100% - 24px);
+      }
+      img{
+        width: 83.33px;
+        height: 83.33px;
+      }
+      h4{
+        font-size: 24px;
+        line-height: 36px;
+        margin: 24px 0 8px 0;
+        font-weight: bold;
+        color:$primary-deep;
+        text-align: center;
+
+      }
+      p{
+        font-size: 16px;
+        line-height: 24px;
+        color:$dark
+      }
+    }
+  }
+}
+
+.classify{
+  padding: 80px 0;
+  @include mobile {
+    padding: 40px 0;
+  }
+  h3{
+    text-align: center;
+    color:$primary-deep;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 72px;
+    margin-bottom: 48px;
+    @include mobile {
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 24px;
+    }
+  }
+  ul{
+    display: flex;
+    gap:24px;
+    @include pad {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include pad {
+      max-width: 336px;
+    }
+    @include mobile {
+      max-width: 100%;
+    }
+  }
+  h4{
+    font-size: 48px;
+    line-height: 72px;
+    color:$primary;
+    transform: skewX(-10deg);
+    font-weight: bold;
+    margin-top: 8px;
+    @include pad {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.co-branding{
+  .main-bg{
+    background-image: url('https://images.unsplash.com/photo-1534865401098-e950b26b2c78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80');
+    background-position: center;
+    background-size: cover;
+  }
+  .main-content{
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include mobile {
+      padding: 40px 0;
+    }
+    h3{
+      margin-bottom: 48px;
+      font-size: 48px;
+      line-height: 72px;
+      font-weight: bold;
+      color:$white;
+      @include mobile {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 24px;
+      }
+    }
+    ul {
+      display: flex;
+      width: 100%;
+      @include pad {
+        flex-direction: column;
+      }
+      li{
+        width: 50%;
+        background-color: $white;
+        @include pad {
+          width: 100%;
+          &:first-child{
+            margin-bottom: 24px;
+          }
+        }
+      }
+    }
+    .double{
+      background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true');
+      background-size: cover;
+      background-position: center;
+      min-height: 240px;
+      @include mobile {
+        background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1-sm.png?raw=true');
+      }
+    }
+    .youth{
+      background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true');
+      background-size: cover;
+      background-position: center;
+      min-height: 240px;
+      @include mobile {
+        background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2-sm.png?raw=true');
+      }
+    }
+    h4{
+      font-size: 48px;
+      line-height: 72px;
+      color:$primary;
+      font-weight: bold;
+      transform: skewX(-10deg);
+      margin: 8px 0;
+      text-align: center;
+    }
+  }
+}
+
+.recommend{
+  padding: 80px 0;
+  @include mobile {
+    padding: 40px 0;
+  }
+  h3{
+    font-size: 48px;
+    line-height: 72px;
+    margin-bottom: 48px;
+    color:$primary-deep;
+    font-weight: bold;
+    text-align: center;
+    @include mobile {
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 24px;
+    }
+  }
+  ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    gap:24px;
+    @include mobile {
+      gap:16px;
+    }
+  }
+  li{
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(25% - 24px);
+    border-radius: 4px 4px 0px 0px;
+    box-shadow: 0px 2px 6px #00000029;
+    border: 1px solid #DEE2E6;
+    @include pad {
+      flex-basis: calc(50% - 24px);
+    }
+    @include mobile {
+      flex-basis: 100%
+    }
+    .info{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 16px;
+      height: 100%;
+      min-height: 205px;
+    }
+    h4{
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 8px;
+    }
+    p{
+      font-size: 16px;
+      line-height: 24px;
+    }
+    span{
+      font-size: 14px;
+      line-height: 21px;
+      color:#707070;
+      margin-top: auto;
+    }
+  }
+}
+
+.contact{
+  padding: 80px 0;
+  background-color: $light;
+  @include mobile {
+    padding: 40px 0;
+  }
+  .contact-bg{
+    margin: 0 auto;
+    max-width: 636px;
+    @include pad {
+      max-width: 576px;
+    }
+    @include mobile {
+      max-width: 100%;
+    }
+  }
+  h3{
+    font-size: 48px;
+    line-height: 72px;
+    color:$primary-deep;
+    margin-bottom: 48px;
+    text-align: center;
+    font-weight: bold;
+    @include mobile {
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 24px;
+    }
+  }
+  p{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 24px;
+    @include pad {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .input-field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    label{
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    input{
+      border: 1px solid #000000;
+      color: #000000;
+      text-transform: uppercase;
+      padding: 6px 12px;
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+  textarea{
+    max-height: 136px;
+    border: 1px solid $dark;
+    padding: 6px 12px;
+    &:focus{
+      outline: none;
+    }
+  }
+  .checkbox{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 16px 0 48px 0;
+    @include mobile {
+      align-items: flex-start;
+      margin: 16px 0 24px 0;
+    }
+    label{
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
+  a.send{
+    margin: 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color:$primary;
+    color:$white;
+    padding: 16px;
+    min-width: 416px;
+    transition: background-color .3s ease-out;
+    &:hover{
+      background-color:$primary-deep;
+    }
+    @include pad {
+      min-width: 336px;
+    }
+    @include mobile {
+      max-width: 100%;
     }
   }
 }
