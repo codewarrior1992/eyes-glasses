@@ -1,11 +1,10 @@
-/* ###### utilities ###### */ 
-@import './utilities/variables.scss';
-@import './utilities/helpers.scss';
-@import './utilities/mixin.scss';
+
 
 /* ###### base ###### */ 
 @import './base/reset.scss';
 @import './base/base.scss';
+@import './base/variables.scss';
+@import './base/mixin.scss';
 
 /* ###### layout ###### */ 
 @import './layout/header.scss';
